@@ -68,7 +68,7 @@ class PRSession(EyelinkSession):
         self.instruction.setSize((1200,50))
 
         self.target = sound.Sound('TORC_TARGET.wav')
-        self.target.setVolume(0.5) #this should be set based on staircase (0.08 is difficult)
+        self.target.setVolume(0.08) #this should be set based on staircase (0.08 is difficult)
         self.noise = sound.Sound('TORC_424_02_h501.wav')
 
     def run(self):
