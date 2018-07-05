@@ -2,11 +2,21 @@ from exptools.core.trial import Trial
 import os
 import exptools
 import json
-from psychopy import logging, visual, event
+from psychopy import logging, visual, clock, event
+from psychopy import sound, core
 import numpy as np
 
+import pyaudio
+import wave
+import sys
+
+
+
+#print('Using %s (with %s) for sounds' % (sound.audioLib, sound.audioDriver))
 
 class PRTrial(Trial):
+
+
 
     def __init__(self, ti, config, parameters, *args, **kwargs):
 
@@ -37,15 +47,18 @@ class PRTrial(Trial):
             self.session.fixation.draw()
 
         elif self.phase == 1: # delay
+            self.session.noise.stop()
+            self.session.target.stop() 
             self.session.fixation.color = 'white'
             self.session.fixation.draw()
 
         elif self.phase == 2: # decision interval
             self.session.fixation.color = 'blue'
             self.session.fixation.draw()
-            self.session.play_sound( sound_index='TORC_424_02_h501') #maxtime=self.parameters['duration_decision']*1000)
-            # if self.parameters['present']:
-            #     self.session.play_sound( sound_index='TORC_TARGET') #, maxtime=self.parameters['duration_decision']*1000)
+            self.session.noise.play(loops=None)
+            #self.session.play( sound_index='TORC_424_02_h501') #maxtime=self.parameters['duration_decision']*1000)
+            if self.parameters['present']:
+                self.session.target.play()  #, maxtime=self.parameters['duration_decision']*1000)
             
         super(PRTrial, self).draw()
 

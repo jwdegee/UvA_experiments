@@ -3,7 +3,7 @@ import random
 import os
 import json
 import glob
-from psychopy import visual, clock
+from psychopy import visual, clock, sound, core
 
 import exptools
 from exptools.core.session import EyelinkSession
@@ -23,7 +23,7 @@ class PRSession(EyelinkSession):
         self.config = config
         self.create_trials()
         self.setup_stimuli()
-        self.setup_sound_system(directory='/Users/janwillem/Dropbox/experiments/experiment_tools/experiment/sounds/')
+        self.setup_sound_system(directory='/Users/lolabeerendonk/Documents/reps/UvA_experiments/sounds/')
 
         self.stopped = False
 
@@ -66,6 +66,10 @@ class PRSession(EyelinkSession):
             alignHoriz = 'center',
             color=(1,0,0))
         self.instruction.setSize((1200,50))
+
+        self.target = sound.Sound('TORC_TARGET.wav')
+        self.target.setVolume(0.5) #this should be set based on staircase (0.08 is difficult)
+        self.noise = sound.Sound('TORC_424_02_h501.wav')
 
     def run(self):
         """run the session"""
