@@ -4,8 +4,8 @@ from psychopy.tools.filetools import fromFile, toFile
 import numpy, random
 import os, glob
 
-subject_initials = 'jwp'
-nr_trials = 30
+subject_initials = 'test'
+nr_trials = 20
 
 expInfo = {'observer':subject_initials,}
 expInfo['dateStr'] = data.getDateStr()  # add the current time
@@ -16,17 +16,17 @@ dataFile = open(fileName+'.csv', 'w')  # a simple text file with 'comma-separate
 dataFile.write('targetSide,volume,correct\n')
 
 # create the staircase handler
-staircase = data.QuestHandler(startVal=0.5, startValSd=0.1,
-    pThreshold=0.65, gamma=0.01, beta=3.5, delta=0.01,
+staircase = data.QuestHandler(startVal=0.5, startValSd=0.05,
+    pThreshold=0.65, gamma=0.5, beta=3.5, delta=0.01,
     nTrials=nr_trials, minVal=0, maxVal=1)
 
 # create window and stimuli
-win = visual.Window([800,600],allowGUI=True,
+win = visual.Window([1920,1080], fullscr=True, allowGUI=True,
                     monitor='testMonitor', units='deg')
 fixation = visual.GratingStim(win, color=-1, colorSpace='rgb',
                               tex=None, mask='circle', size=0.2)
 
-sound_files = glob.glob(os.path.join('/Users/jwdegee/Documents/repos/UvA_experiments/sounds/', '*.wav'))
+sound_files = glob.glob(os.path.join('/Users/beauchamplab/Documents/jwdegee/repos/UvA_experiments/sounds/', '*.wav'))
 sounds = {}
 for sf in sound_files:
     sound_name = os.path.splitext(os.path.split(sf)[-1])[0]
@@ -132,9 +132,6 @@ staircase.saveAsPickle(fileName)  # special python binary file to save all the i
 print('threshold = {}'.format(staircase.mean()))
 
 win.close()
-
-from IPython import embed as shell
-shell()
 
 # autmatically move files:
 if not os.path.exists('data/staircase/{}/'.format(subject_initials)):

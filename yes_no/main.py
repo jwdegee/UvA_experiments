@@ -6,16 +6,21 @@ from analyse_main import analyse_yesno
 
 def main():
 
-    subject_initials = str(raw_input('Your initials: '))
-    index_number = int(raw_input('Which run: '))
-    version_number = int(raw_input('Version: ') )
+    # subject_initials = str(raw_input('Your initials: '))
+    # index_number = int(raw_input('Which run: '))
+    # version_number = int(raw_input('Version: ') )
 
-    tracker_on = False
-    screen_params = {'size':(800,600), 'full_screen': False}
+    subject_initials = 'test'
+    index_number = 1
+    version_number = 1
+
+    tracker_on = 1
+    screen_params = {'size':(1920,1080), 'full_screen': True}
 
     appnope.nope()
 
     ts = PRSession(subject_initials=subject_initials, index_number=index_number, tracker_on=tracker_on, **screen_params)
+    # ts = PRSession(subject_initials=subject_initials, index_number=index_number, tracker_on=tracker_on,)
     ts.run()
 
     # autmatically move files:

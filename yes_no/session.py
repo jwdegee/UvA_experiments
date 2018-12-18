@@ -22,7 +22,9 @@ class PRSession(EyelinkSession):
         
         self.volume = pd.read_csv(os.path.join(os.path.abspath(os.getcwd()), 'volumes', '{}.csv'.format(self.subject_initials)))
 
-        sound_files = glob.glob(os.path.join('/Users/jwdegee/Documents/repos/UvA_experiments/sounds/', '*.wav'))
+        # sound_files = glob.glob(os.path.join('/Users/jwdegee/Documents/repos/UvA_experiments/sounds/', '*.wav'))
+        sound_files = glob.glob(os.path.join('/Users/beauchamplab/Documents/jwdegee/repos/UvA_experiments/sounds/', '*.wav'))
+
         self.sounds = {}
         for sf in sound_files:
             sound_name = os.path.splitext(os.path.split(sf)[-1])[0]
