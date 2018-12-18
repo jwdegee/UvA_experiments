@@ -1,11 +1,6 @@
 {
-	"size_dot_deg":0.125,
-	"diameter_dotcloud_deg":25,
-	"size_fixation_deg":0.25,
-	"speed_dot_deg":0.00025,
-	"nDots":400,
-	"noiseDots":"position",
-	"dotLife":10,
-	"nTrials":50,
-	"kappa":15
+	"signal_probability": 0.7,
+	"fixation_size": 0.25,
+	"trials_n": 100,
+	"block_size": 5
 }

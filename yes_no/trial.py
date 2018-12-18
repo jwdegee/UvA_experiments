@@ -1,22 +1,9 @@
-from exptools.core.trial import Trial
-import os
-import exptools
-import json
-from psychopy import logging, visual, clock, event
-from psychopy import sound, core
 import numpy as np
+from psychopy import event
 
-import pyaudio
-import wave
-import sys
-
-
-
-#print('Using %s (with %s) for sounds' % (sound.audioLib, sound.audioDriver))
+from exptools.core.trial import Trial
 
 class PRTrial(Trial):
-
-
 
     def __init__(self, ti, config, parameters, *args, **kwargs):
 
@@ -35,35 +22,33 @@ class PRTrial(Trial):
             *args,
             **kwargs)
 
+        self.config = config
         self.noise_played = False
         self.signal_played = False
+        self.parameters['answer'] = -1
 
     def draw(self, *args, **kwargs):
+        
+        self.session.fixation.color = 'white'
+        self.session.fixation.draw()
 
         # draw additional stimuli:
-        if (self.phase == 0 ) * (self.ID == 0):
-            self.session.fixation.color = 'white'
+        if (self.phase == 0):
             self.session.instruction.draw()
-
-        if self.phase == 0: # intro text
-            self.session.fixation.color = 'white'
-            self.session.fixation.draw()
+            self.session.instruction2.draw()
 
         elif self.phase == 1: # delay
-            self.session.fixation.color = 'white'
-            self.session.fixation.draw()
-
-
+            pass
+            
         elif self.phase == 2: # decision interval
             self.session.fixation.color = 'blue'
             self.session.fixation.draw()
             if not self.noise_played:
                 self.session.noise.play(loops=None)
                 self.noise_played = True
-            #self.session.play( sound_index='TORC_424_02_h501') #maxtime=self.parameters['duration_decision']*1000)
             if self.parameters['present']:
                 if not self.signal_played:
-                    self.session.target.play()  #, maxtime=self.parameters['duration_decision']*1000)
+                    self.session.target.play(loops=None) #, maxtime=self.parameters['duration_decision']*1000)
                     self.signal_played = True
 
         super(PRTrial, self).draw()
@@ -78,22 +63,14 @@ class PRTrial(Trial):
                     self.session.stopped = True
                     print 'run canceled by user'
 
-                elif ev in ['a', 's', 'k', 'l']:
-                    if (self.phase == 0) * (self.ID == 0):
-                        self.phase_forward()                    
+                elif ev in ['f', 'j']:
+                    if (self.phase == 0):
+                        self.phase_forward()
                     elif (self.phase == 2):
-                        if ev == 'a':
+                        if ev == 'f':
                             self.parameters['answer'] = 0
-                            self.parameters['confidence'] = 1
-                        elif ev == 's':
-                            self.parameters['answer'] = 0
-                            self.parameters['confidence'] = 0
-                        elif ev == 'k':
+                        elif ev == 'j':
                             self.parameters['answer'] = 1
-                            self.parameters['confidence'] = 0
-                        elif ev == 'l':
-                            self.parameters['answer'] = 1
-                            self.parameters['confidence'] = 1
                         self.parameters['answer_time'] = self.this_phase_time
                         self.session.noise.stop()
                         self.session.target.stop()
@@ -103,6 +80,11 @@ class PRTrial(Trial):
             super(PRTrial, self).key_event(ev)
 
     def phase_forward(self):
-
+        
         super(PRTrial, self).phase_forward()
 
+
+        # if (self.phase == 2) & (self.ID % self.config['block_size'] == 0) & (self.ID != 0):
+        #     self.session.instruction.draw()
+        #     print('sleep')
+        #     time_module.sleep(5)
