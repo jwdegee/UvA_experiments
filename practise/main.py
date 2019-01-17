@@ -6,15 +6,15 @@ from analyse_main import analyse_yesno
 
 def main():
 
-    subject_initials = str(raw_input('Your initials: '))
-    index_number = int(raw_input('Which run: '))
+    # subject_initials = str(raw_input('Your initials: '))
+    # index_number = int(raw_input('Which run: '))
     version_number = int(raw_input('Version: ') )
 
-    # subject_initials = 'test'
-    # index_number = 1
+    subject_initials = 'test'
+    index_number = 0
     # version_number = 1
 
-    tracker_on = 1
+    tracker_on = 0
     screen_params = {'size':(1920,1080), 'full_screen': True, 'background_color':(0.5, 0.5, 0.5)}
 
     appnope.nope()

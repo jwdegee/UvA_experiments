@@ -1,11 +1,10 @@
-"""measure your JND in orientation using a staircase method"""
 from psychopy import core, visual, data, event, sound
 from psychopy.tools.filetools import fromFile, toFile
 import numpy, random
 import os, glob
 
 subject_initials = 'test'
-nr_trials = 20
+nr_trials = 25
 
 expInfo = {'observer':subject_initials,}
 expInfo['dateStr'] = data.getDateStr()  # add the current time
@@ -22,9 +21,14 @@ staircase = data.QuestHandler(startVal=0.5, startValSd=0.05,
 
 # create window and stimuli
 win = visual.Window([1920,1080], fullscr=True, allowGUI=True,
-                    monitor='testMonitor', units='deg')
-fixation = visual.GratingStim(win, color=-1, colorSpace='rgb',
-                              tex=None, mask='circle', size=0.2)
+                    monitor='testMonitor', units='pixels')
+fixation = visual.GratingStim(win, 
+                                pos=(0,0),
+                                tex='sin',
+                                mask='circle',
+                                size=10,
+                                texRes=20,
+                                sf=0)
 
 sound_files = glob.glob(os.path.join('/Users/beauchamplab/Documents/jwdegee/repos/UvA_experiments/sounds/', '*.wav'))
 sounds = {}
@@ -40,9 +44,21 @@ globalClock = core.Clock()
 trialClock = core.Clock()
 
 # display instructions and wait
-message1 = visual.TextStim(win, pos=[0,+3],text='Hit a key when ready.')
-message2 = visual.TextStim(win, pos=[0,-3],
-    text="Then press left or right to identify the deg probe.")
+message1 = visual.TextStim(win, text="""Signal present? Press 'f' for 1st and 'j' for 2nd interval.""",
+                            pos=[0,0],
+                            font = 'Helvetica Neue',
+                            italic = True, 
+                            height = 20, 
+                            alignHoriz = 'center',
+                            color=(1,0,0))
+
+message2 = visual.TextStim(win, text="""Press either to start.""",
+                            pos=[0,-25],
+                            font = 'Helvetica Neue',
+                            italic = True, 
+                            height = 20, 
+                            alignHoriz = 'center',
+                            color=(1,0,0))
 message1.draw()
 message2.draw()
 fixation.draw()
@@ -96,7 +112,7 @@ for trial in range(staircase.nTrials):  # will continue the staircase until it t
     core.wait(0.1)
 
     # blank screen
-    fixation.color = (1,0,0)
+    fixation.color = (0,0,1)
     fixation.draw()
     win.flip()
 
@@ -105,12 +121,12 @@ for trial in range(staircase.nTrials):  # will continue the staircase until it t
     while thisResp==None:
         allKeys=event.waitKeys()
         for thisKey in allKeys:
-            if thisKey=='left':
+            if thisKey=='f':
                 if targetSide==0: 
                     thisResp = 1  # correct
                 else: 
                     thisResp = 0 # incorrect
-            elif thisKey=='right':
+            elif thisKey=='j':
                 if targetSide==1: 
                     thisResp = 1  # correct
                 else: 
@@ -134,18 +150,18 @@ print('threshold = {}'.format(staircase.mean()))
 win.close()
 
 # autmatically move files:
-if not os.path.exists('data/staircase/{}/'.format(subject_initials)):
-    os.makedirs('data/staircase/{}/'.format(subject_initials))
-os.system('mv %s %s' % (fileName + '.csv', 'data/staircase/' + subject_initials + '/' + fileName + '.csv'))
+if not os.path.exists('data/{}/'.format(subject_initials)):
+    os.makedirs('data/{}/'.format(subject_initials))
+os.system('mv %s %s' % (fileName + '.csv', 'data/' + subject_initials + '/' + fileName + '.csv'))
 
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv('data/staircase/' + subject_initials + '/' + fileName + '.csv')
+df = pd.read_csv('data/' + subject_initials + '/' + fileName + '.csv')
 fig = plt.figure()
 plt.plot(df['volume'])
 plt.ylabel('Volume')
 plt.xlabel('Trial #')
-fig.savefig('data/staircase/' + subject_initials + '/' + fileName + '.jpg')
+fig.savefig('data/' + subject_initials + '/' + fileName + '.jpg')
 
 core.quit()

@@ -22,8 +22,7 @@ class PRSession(EyelinkSession):
         
         self.version_number = version_number
         self.volume = pd.read_csv(os.path.join(os.path.abspath(os.getcwd()), 'volumes', '{}.csv'.format(self.subject_initials)))
-        print(self.volume)
-
+        
         # sound_files = glob.glob(os.path.join('/Users/jwdegee/Documents/repos/UvA_experiments/sounds/', '*.wav'))
         sound_files = glob.glob(os.path.join('/Users/beauchamplab/Documents/jwdegee/repos/UvA_experiments/sounds/', '*.wav'))
 
@@ -47,13 +46,13 @@ class PRSession(EyelinkSession):
         for t in xrange(self.config['trials_n'] / len(stim)):
             for s in stim:
                 self.trial_parameters.append({'duration_intro': 0, #1 + np.random.exponential(1.5),
-                                             'duration_delay' : np.random.uniform(3,4),
+                                             'duration_delay' : np.random.uniform(0.75,1.25),
                                              'duration_decision': 2.5,
                                              'present': s,
                                              'signal_probability': self.config['signal_probability'],
                                              'volume': self.volume.loc[self.index_number,'volume']
                                              })
-
+        
         # shuffle:
         random.shuffle(self.trial_parameters)
         

@@ -1,0 +1,1605 @@
+(dp0
+S'parameterArray'
+p1
+(lp2
+(dp3
+S'volume'
+p4
+cnumpy.core.multiarray
+scalar
+p5
+(cnumpy
+dtype
+p6
+(S'f8'
+p7
+I0
+I1
+tp8
+Rp9
+(I3
+S'<'
+p10
+NNNI-1
+I-1
+I0
+tp11
+bS'\x9a\x99\x99\x99\x99\x99\xb9?'
+p12
+tp13
+Rp14
+sS'answer'
+p15
+I0
+sS'present'
+p16
+g5
+(g9
+S'\x00\x00\x00\x00\x00\x00\x00\x00'
+p17
+tp18
+Rp19
+sS'answer_time'
+p20
+g5
+(g9
+S'\x00\x00\x00 \xef\x9c\x01@'
+p21
+tp22
+Rp23
+sS'duration_decision'
+p24
+F2.5
+sS'signal_probability'
+p25
+F0.5
+sS'duration_intro'
+p26
+I30
+sS'duration_delay'
+p27
+F0.8187034037372338
+sag3
+a(dp28
+g4
+g5
+(g9
+S'\x9a\x99\x99\x99\x99\x99\xb9?'
+p29
+tp30
+Rp31
+sg15
+I1
+sg16
+g5
+(g9
+S'\x00\x00\x00\x00\x00\x00\xf0?'
+p32
+tp33
+Rp34
+sg20
+g5
+(g9
+S'\x00\x00\x00@\xd4\xd9\xf5?'
+p35
+tp36
+Rp37
+sg24
+F2.5
+sg25
+F0.5
+sg26
+I0
+sg27
+F0.8153628914547437
+sag28
+a(dp38
+g4
+g5
+(g9
+S'\x9a\x99\x99\x99\x99\x99\xb9?'
+p39
+tp40
+Rp41
+sg15
+I0
+sg16
+g5
+(g9
+S'\x00\x00\x00\x00\x00\x00\x00\x00'
+p42
+tp43
+Rp44
+sg20
+g5
+(g9
+S'\x00\x00\x00\x80\xdf0\xeb?'
+p45
+tp46
+Rp47
+sg24
+F2.5
+sg25
+F0.5
+sg26
+I0
+sg27
+F1.1129966450142956
+sag38
+a(dp48
+g4
+g5
+(g9
+S'\x9a\x99\x99\x99\x99\x99\xb9?'
+p49
+tp50
+Rp51
+sg15
+I0
+sg16
+g19
+sg20
+g5
+(g9
+S'\x00\x00\x00\x00\x1f\x9e\xe9?'
+p52
+tp53
+Rp54
+sg24
+F2.5
+sg25
+F0.5
+sg26
+I0
+sg27
+F1.243977424397756
+sag48
+a(dp55
+g4
+g5
+(g9
+S'\x9a\x99\x99\x99\x99\x99\xb9?'
+p56
+tp57
+Rp58
+sg15
+I0
+sg16
+g5
+(g9
+S'\x00\x00\x00\x00\x00\x00\x00\x00'
+p59
+tp60
+Rp61
+sg20
+g5
+(g9
+S'\x00\x00\x00\x80&\xa7\xea?'
+p62
+tp63
+Rp64
+sg24
+F2.5
+sg25
+F0.5
+sg26
+I0
+sg27
+F1.2171882374140994
+sag55
+a(dp65
+g4
+g5
+(g9
+S'\x9a\x99\x99\x99\x99\x99\xb9?'
+p66
+tp67
+Rp68
+sg15
+I1
+sg16
+g5
+(g9
+S'\x00\x00\x00\x00\x00\x00\xf0?'
+p69
+tp70
+Rp71
+sg20
+g5
+(g9
+S'\x00\x00\x00\x00\xdc/\xde?'
+p72
+tp73
+Rp74
+sg24
+F2.5
+sg25
+F0.5
+sg26
+I0
+sg27
+F0.779208311696028
+sag65
+a(dp75
+g4
+g5
+(g9
+S'\x9a\x99\x99\x99\x99\x99\xb9?'
+p76
+tp77
+Rp78
+sg15
+I0
+sg16
+g5
+(g9
+S'\x00\x00\x00\x00\x00\x00\x00\x00'
+p79
+tp80
+Rp81
+sg20
+g5
+(g9
+S'\x00\x00\x00\x80d\xba\xeb?'
+p82
+tp83
+Rp84
+sg24
+F2.5
+sg25
+F0.5
+sg26
+I0
+sg27
+F1.211433383218593
+sag75
+a(dp85
+g4
+g5
+(g9
+S'\x9a\x99\x99\x99\x99\x99\xb9?'
+p86
+tp87
+Rp88
+sg15
+I0
+sg16
+g5
+(g9
+S'\x00\x00\x00\x00\x00\x00\x00\x00'
+p89
+tp90
+Rp91
+sg20
+g5
+(g9
+S'\x00\x00\x00\x00\xbf\x0b\xe9?'
+p92
+tp93
+Rp94
+sg24
+F2.5
+sg25
+F0.5
+sg26
+I0
+sg27
+F0.9696153349396732
+sag85
+a(dp95
+g4
+g5
+(g9
+S'\x9a\x99\x99\x99\x99\x99\xb9?'
+p96
+tp97
+Rp98
+sg15
+I1
+sg16
+g5
+(g9
+S'\x00\x00\x00\x00\x00\x00\xf0?'
+p99
+tp100
+Rp101
+sg20
+g5
+(g9
+S'\x00\x00\x00\x80l\xa1\xe1?'
+p102
+tp103
+Rp104
+sg24
+F2.5
+sg25
+F0.5
+sg26
+I0
+sg27
+F0.9687054380197555
+sag95
+a(dp105
+g4
+g5
+(g9
+S'\x9a\x99\x99\x99\x99\x99\xb9?'
+p106
+tp107
+Rp108
+sg15
+I0
+sg16
+g61
+sg20
+g5
+(g9
+S'\x00\x00\x00\x80\x830\xeb?'
+p109
+tp110
+Rp111
+sg24
+F2.5
+sg25
+F0.5
+sg26
+I0
+sg27
+F0.7866956775504744
+sag105
+a(dp112
+g4
+g5
+(g9
+S'\x9a\x99\x99\x99\x99\x99\xb9?'
+p113
+tp114
+Rp115
+sg15
+I0
+sg16
+g91
+sg20
+g5
+(g9
+S'\x00\x00\x00\x00\x81#\xea?'
+p116
+tp117
+Rp118
+sg24
+F2.5
+sg25
+F0.5
+sg26
+I0
+sg27
+F0.8340404621147335
+sag112
+a(dp119
+g4
+g5
+(g9
+S'\x9a\x99\x99\x99\x99\x99\xb9?'
+p120
+tp121
+Rp122
+sg15
+I1
+sg16
+g5
+(g9
+S'\x00\x00\x00\x00\x00\x00\xf0?'
+p123
+tp124
+Rp125
+sg20
+g5
+(g9
+S'\x00\x00\x00\x00\xc4\xfc\xe7?'
+p126
+tp127
+Rp128
+sg24
+F2.5
+sg25
+F0.5
+sg26
+I0
+sg27
+F1.065646514659532
+sag119
+a(dp129
+g4
+g5
+(g9
+S'\x9a\x99\x99\x99\x99\x99\xb9?'
+p130
+tp131
+Rp132
+sg15
+I0
+sg16
+g81
+sg20
+g5
+(g9
+S'\x00\x00\x00\x80h\xf4\xee?'
+p133
+tp134
+Rp135
+sg24
+F2.5
+sg25
+F0.5
+sg26
+I0
+sg27
+F1.0750279809763241
+sag129
+a(dp136
+g4
+g5
+(g9
+S'\x9a\x99\x99\x99\x99\x99\xb9?'
+p137
+tp138
+Rp139
+sg15
+I0
+sg16
+g44
+sg20
+g5
+(g9
+S'\x00\x00\x00\x00\xa3\xe8\xe4?'
+p140
+tp141
+Rp142
+sg24
+F2.5
+sg25
+F0.5
+sg26
+I0
+sg27
+F0.9169869056493712
+sag136
+a(dp143
+g4
+g5
+(g9
+S'\x9a\x99\x99\x99\x99\x99\xb9?'
+p144
+tp145
+Rp146
+sg15
+I1
+sg16
+g34
+sg20
+g5
+(g9
+S'\x00\x00\x00\x80\xc9\x00\xe8?'
+p147
+tp148
+Rp149
+sg24
+F2.5
+sg25
+F0.5
+sg26
+I0
+sg27
+F1.214720471717547
+sag143
+a(dp150
+g4
+g5
+(g9
+S'\x9a\x99\x99\x99\x99\x99\xb9?'
+p151
+tp152
+Rp153
+sg15
+I1
+sg16
+g125
+sg20
+g5
+(g9
+S'\x00\x00\x00\x00\xbb\xa7\xe1?'
+p154
+tp155
+Rp156
+sg24
+F2.5
+sg25
+F0.5
+sg26
+I0
+sg27
+F0.7950948809349363
+sag150
+a(dp157
+g4
+g5
+(g9
+S'\x9a\x99\x99\x99\x99\x99\xb9?'
+p158
+tp159
+Rp160
+sg15
+I0
+sg16
+g91
+sg20
+g5
+(g9
+S"\x00\x00\x00\x00'\xe9\xee?"
+p161
+tp162
+Rp163
+sg24
+F2.5
+sg25
+F0.5
+sg26
+I0
+sg27
+F0.9641234073120721
+sag157
+a(dp164
+g4
+g5
+(g9
+S'\x9a\x99\x99\x99\x99\x99\xb9?'
+p165
+tp166
+Rp167
+sg15
+I1
+sg16
+g101
+sg20
+g5
+(g9
+S'\x00\x00\x00\x80\x1fV\xe5?'
+p168
+tp169
+Rp170
+sg24
+F2.5
+sg25
+F0.5
+sg26
+I0
+sg27
+F0.9070222985095876
+sag164
+a(dp171
+g4
+g5
+(g9
+S'\x9a\x99\x99\x99\x99\x99\xb9?'
+p172
+tp173
+Rp174
+sg15
+I1
+sg16
+g5
+(g9
+S'\x00\x00\x00\x00\x00\x00\xf0?'
+p175
+tp176
+Rp177
+sg20
+g5
+(g9
+S'\x00\x00\x00\x80n\xa0\xe1?'
+p178
+tp179
+Rp180
+sg24
+F2.5
+sg25
+F0.5
+sg26
+I0
+sg27
+F1.1107798462568792
+sag171
+a(dp181
+g4
+g5
+(g9
+S'\x9a\x99\x99\x99\x99\x99\xb9?'
+p182
+tp183
+Rp184
+sg15
+I1
+sg16
+g101
+sg20
+g5
+(g9
+S'\x00\x00\x00\x00\xec\xd8\xdd?'
+p185
+tp186
+Rp187
+sg24
+F2.5
+sg25
+F0.5
+sg26
+I0
+sg27
+F0.9588924102275083
+sag181
+a(dp188
+g4
+g5
+(g9
+S'\x9a\x99\x99\x99\x99\x99\xb9?'
+p189
+tp190
+Rp191
+sg15
+I1
+sg16
+g177
+sg20
+g5
+(g9
+S'\x00\x00\x00\x80E\xf1\xe6?'
+p192
+tp193
+Rp194
+sg24
+F2.5
+sg25
+F0.5
+sg26
+I0
+sg27
+F0.7634349209797224
+sag188
+a(dp195
+g4
+g5
+(g9
+S'\x9a\x99\x99\x99\x99\x99\xb9?'
+p196
+tp197
+Rp198
+sg15
+I0
+sg16
+g61
+sg20
+g5
+(g9
+S'\x00\x00\x00\x00P\x8a\xef?'
+p199
+tp200
+Rp201
+sg24
+F2.5
+sg25
+F0.5
+sg26
+I0
+sg27
+F0.9004413768487374
+sag195
+a(dp202
+g4
+g5
+(g9
+S'\x9a\x99\x99\x99\x99\x99\xb9?'
+p203
+tp204
+Rp205
+sg15
+I1
+sg16
+g177
+sg20
+g5
+(g9
+S'\x00\x00\x00\x80\x19\xd4\xe5?'
+p206
+tp207
+Rp208
+sg24
+F2.5
+sg25
+F0.5
+sg26
+I0
+sg27
+F0.7859634545412344
+sag202
+a(dp209
+g4
+g5
+(g9
+S'\x9a\x99\x99\x99\x99\x99\xb9?'
+p210
+tp211
+Rp212
+sg15
+I1
+sg16
+g71
+sg20
+g5
+(g9
+S'\x00\x00\x00\x00U4\xeb?'
+p213
+tp214
+Rp215
+sg24
+F2.5
+sg25
+F0.5
+sg26
+I0
+sg27
+F0.9867458023203352
+sag209
+a(dp216
+g4
+g5
+(g9
+S'\x9a\x99\x99\x99\x99\x99\xb9?'
+p217
+tp218
+Rp219
+sg15
+I0
+sg16
+g91
+sg20
+g5
+(g9
+S'\x00\x00\x00\x80\xff/\xeb?'
+p220
+tp221
+Rp222
+sg24
+F2.5
+sg25
+F0.5
+sg26
+I0
+sg27
+F0.9214849933745761
+sag216
+a(dp223
+g4
+g5
+(g9
+S'\x9a\x99\x99\x99\x99\x99\xb9?'
+p224
+tp225
+Rp226
+sg15
+I0
+sg16
+g61
+sg20
+g5
+(g9
+S'\x00\x00\x00\x00\xac\x0f\xe9?'
+p227
+tp228
+Rp229
+sg24
+F2.5
+sg25
+F0.5
+sg26
+I0
+sg27
+F1.1992025755914422
+sag223
+a(dp230
+g4
+g5
+(g9
+S'\x9a\x99\x99\x99\x99\x99\xb9?'
+p231
+tp232
+Rp233
+sg15
+I0
+sg16
+g44
+sg20
+g5
+(g9
+S'\x00\x00\x00\x00\x8b\n\xe9?'
+p234
+tp235
+Rp236
+sg24
+F2.5
+sg25
+F0.5
+sg26
+I0
+sg27
+F1.236483041365953
+sag230
+a(dp237
+g4
+g5
+(g9
+S'\x9a\x99\x99\x99\x99\x99\xb9?'
+p238
+tp239
+Rp240
+sg15
+I1
+sg16
+g71
+sg20
+g5
+(g9
+S'\x00\x00\x00\x00\xa3>\xec?'
+p241
+tp242
+Rp243
+sg24
+F2.5
+sg25
+F0.5
+sg26
+I0
+sg27
+F0.7981758539846685
+sag237
+a(dp244
+g4
+g5
+(g9
+S'\x9a\x99\x99\x99\x99\x99\xb9?'
+p245
+tp246
+Rp247
+sg15
+I1
+sg16
+g34
+sg20
+g5
+(g9
+S'\x00\x00\x00\x00o\x8e\xea?'
+p248
+tp249
+Rp250
+sg24
+F2.5
+sg25
+F0.5
+sg26
+I0
+sg27
+F0.9116347891349528
+sag244
+a(dp251
+g4
+g5
+(g9
+S'\x9a\x99\x99\x99\x99\x99\xb9?'
+p252
+tp253
+Rp254
+sg15
+I1
+sg16
+g125
+sg20
+g5
+(g9
+S'\x00\x00\x00\x00\xc2\xaf\xea?'
+p255
+tp256
+Rp257
+sg24
+F2.5
+sg25
+F0.5
+sg26
+I0
+sg27
+F1.1637417480728744
+sag251
+a(dp258
+g4
+g5
+(g9
+S'\x9a\x99\x99\x99\x99\x99\xb9?'
+p259
+tp260
+Rp261
+sg15
+I0
+sg16
+g44
+sg20
+g5
+(g9
+S'\x00\x00\x00\x80x\x06\xe9?'
+p262
+tp263
+Rp264
+sg24
+F2.5
+sg25
+F0.5
+sg26
+I0
+sg27
+F1.2474301720281809
+sag258
+a(dp265
+g4
+g5
+(g9
+S'\x9a\x99\x99\x99\x99\x99\xb9?'
+p266
+tp267
+Rp268
+sg15
+I1
+sg16
+g177
+sg20
+g5
+(g9
+S'\x00\x00\x00\x00A\x8d\xe8?'
+p269
+tp270
+Rp271
+sg24
+F2.5
+sg25
+F0.5
+sg26
+I0
+sg27
+F1.1637338802994408
+sag265
+a(dp272
+g4
+g5
+(g9
+S'\x9a\x99\x99\x99\x99\x99\xb9?'
+p273
+tp274
+Rp275
+sg15
+I0
+sg16
+g19
+sg20
+g5
+(g9
+S'\x00\x00\x00\xc0I\x99\xf1?'
+p276
+tp277
+Rp278
+sg24
+F2.5
+sg25
+F0.5
+sg26
+I0
+sg27
+F1.1206381326974342
+sag272
+a(dp279
+g4
+g5
+(g9
+S'\x9a\x99\x99\x99\x99\x99\xb9?'
+p280
+tp281
+Rp282
+sg15
+I1
+sg16
+g125
+sg20
+g5
+(g9
+S'\x00\x00\x00\x00<\x95\xe8?'
+p283
+tp284
+Rp285
+sg24
+F2.5
+sg25
+F0.5
+sg26
+I0
+sg27
+F0.8505494530724453
+sag279
+a(dp286
+g4
+g5
+(g9
+S'\x9a\x99\x99\x99\x99\x99\xb9?'
+p287
+tp288
+Rp289
+sg15
+I0
+sg16
+g19
+sg20
+g5
+(g9
+S'\x00\x00\x00\x00\xd6T\xf1?'
+p290
+tp291
+Rp292
+sg24
+F2.5
+sg25
+F0.5
+sg26
+I0
+sg27
+F1.2420322002623432
+sag286
+a(dp293
+g4
+g5
+(g9
+S'\x9a\x99\x99\x99\x99\x99\xb9?'
+p294
+tp295
+Rp296
+sg15
+I1
+sg16
+g71
+sg20
+g5
+(g9
+S'\x00\x00\x00\x00\x96\xa5\xeb?'
+p297
+tp298
+Rp299
+sg24
+F2.5
+sg25
+F0.5
+sg26
+I0
+sg27
+F1.0372450186369906
+sag293
+a(dp300
+g4
+g5
+(g9
+S'\x9a\x99\x99\x99\x99\x99\xb9?'
+p301
+tp302
+Rp303
+sg15
+I1
+sg16
+g34
+sg20
+g5
+(g9
+S'\x00\x00\x00\x00\xd9\x00\xf0?'
+p304
+tp305
+Rp306
+sg24
+F2.5
+sg25
+F0.5
+sg26
+I0
+sg27
+F0.8509872669611441
+sag300
+a(dp307
+g4
+g5
+(g9
+S'\x9a\x99\x99\x99\x99\x99\xb9?'
+p308
+tp309
+Rp310
+sg15
+I0
+sg16
+g81
+sg20
+g5
+(g9
+S'\x00\x00\x00\x00\x19s\xef?'
+p311
+tp312
+Rp313
+sg24
+F2.5
+sg25
+F0.5
+sg26
+I0
+sg27
+F0.9124525602059521
+sag307
+a(dp314
+g4
+g5
+(g9
+S'\x9a\x99\x99\x99\x99\x99\xb9?'
+p315
+tp316
+Rp317
+sg15
+I1
+sg16
+g101
+sg20
+g5
+(g9
+S'\x00\x00\x00\x00O\xf6\xe7?'
+p318
+tp319
+Rp320
+sg24
+F2.5
+sg25
+F0.5
+sg26
+I0
+sg27
+F1.2185839137604035
+sag314
+a(dp321
+g4
+g5
+(g9
+S'\x9a\x99\x99\x99\x99\x99\xb9?'
+p322
+tp323
+Rp324
+sg15
+I0
+sg16
+g81
+sg20
+g5
+(g9
+S'\x00\x00\x00\x80\x89h\xe7?'
+p325
+tp326
+Rp327
+sg24
+F2.5
+sg25
+F0.5
+sg26
+I0
+sg27
+F0.7866333466431903
+sag321
+asS'eventArray'
+p328
+(lp329
+(lp330
+S'trial 0 started at 0.766881942749'
+p331
+aS'trial 0 phase 1 started at 4.17554998398'
+p332
+aS'trial 0 event f at 4.17555904388'
+p333
+aS'trial 0 phase 2 started at 4.98366904259'
+p334
+aS'trial 0 event f at 7.20129799843'
+p335
+aag330
+a(lp336
+S'trial 1 started at 7.20136189461'
+p337
+aS'trial 1 phase 1 started at 7.2013759613'
+p338
+aS'trial 1 phase 2 started at 8.01841497421'
+p339
+aS'trial 1 event j at 9.40270209312'
+p340
+aag336
+a(lp341
+S'trial 2 started at 9.42933297157'
+p342
+aS'trial 2 phase 1 started at 9.42934703827'
+p343
+aS'trial 2 phase 2 started at 10.5504670143'
+p344
+aS'trial 2 event f at 11.417083025'
+p345
+aag341
+a(lp346
+S'trial 3 started at 11.4400069714'
+p347
+aS'trial 3 phase 1 started at 11.4400210381'
+p348
+aS'trial 3 phase 2 started at 12.6994519234'
+p349
+aS'trial 3 event f at 13.517745018'
+p350
+aag346
+a(lp351
+S'trial 4 started at 13.5411350727'
+p352
+aS'trial 4 phase 1 started at 13.5411500931'
+p353
+aS'trial 4 phase 2 started at 14.7668139935'
+p354
+aS'trial 4 event f at 15.6176950932'
+p355
+aag351
+a(lp356
+S'trial 5 started at 15.6407790184'
+p357
+aS'trial 5 phase 1 started at 15.6407930851'
+p358
+aS'trial 5 phase 2 started at 16.4327700138'
+p359
+aS'trial 5 event j at 16.9221160412'
+p360
+aag356
+a(lp361
+S'trial 6 started at 16.9452390671'
+p362
+aS'trial 6 phase 1 started at 16.9452528954'
+p363
+aS'trial 6 phase 2 started at 18.1699690819'
+p364
+aS'trial 6 event f at 19.0555920601'
+p365
+aag361
+a(lp366
+S'trial 7 started at 19.0788109303'
+p367
+aS'trial 7 phase 1 started at 19.0788280964'
+p368
+aS'trial 7 phase 2 started at 20.0536839962'
+p369
+aS'trial 7 event f at 20.8556599617'
+p370
+aag366
+a(lp371
+S'trial 8 started at 20.878868103'
+p372
+aS'trial 8 phase 1 started at 20.8788819313'
+p373
+aS'trial 8 phase 2 started at 21.8523879051'
+p374
+aS'trial 8 event j at 22.4222209454'
+p375
+aag371
+a(lp376
+S'trial 9 started at 22.4530189037'
+p377
+aS'trial 9 phase 1 started at 22.4530360699'
+p378
+aS'trial 9 phase 2 started at 23.2528479099'
+p379
+aS'trial 9 event f at 24.1214199066'
+p380
+aag376
+a(lp381
+S'trial 10 started at 24.1443500519'
+p382
+aS'trial 10 phase 1 started at 24.1443650723'
+p383
+aS'trial 10 phase 2 started at 24.9868059158'
+p384
+aS'trial 10 event f at 25.8203361034'
+p385
+aag381
+a(lp386
+S'trial 11 started at 25.8432791233'
+p387
+aS'trial 11 phase 1 started at 25.8432929516'
+p388
+aS'trial 11 phase 2 started at 26.9207859039'
+p389
+aS'trial 11 event j at 27.6865620613'
+p390
+aag386
+a(lp391
+S'trial 12 started at 27.7099781036'
+p392
+aS'trial 12 phase 1 started at 27.7099909782'
+p393
+aS'trial 12 phase 2 started at 28.7854559422'
+p394
+aS'trial 12 event f at 29.7716240883'
+p395
+aag391
+a(lp396
+S'trial 13 started at 29.7946350574'
+p397
+aS'trial 13 phase 1 started at 29.7946491241'
+p398
+aS'trial 13 phase 2 started at 30.719244957'
+p399
+aS'trial 13 event f at 31.3911340237'
+p400
+aag396
+a(lp401
+S'trial 14 started at 31.4139649868'
+p402
+aS'trial 14 phase 1 started at 31.4139790535'
+p403
+aS'trial 14 phase 2 started at 32.6391539574'
+p404
+aS'trial 14 event j at 33.407574892'
+p405
+aag401
+a(lp406
+S'trial 15 started at 33.4307041168'
+p407
+aS'trial 15 phase 1 started at 33.4307188988'
+p408
+aS'trial 15 phase 2 started at 34.2396140099'
+p409
+aS'trial 15 event j at 34.8074059486'
+p410
+aag406
+a(lp411
+S'trial 16 started at 34.830384016'
+p412
+aS'trial 16 phase 1 started at 34.8303980827'
+p413
+aS'trial 16 phase 2 started at 35.8065669537'
+p414
+aS'trial 16 event f at 36.7898449898'
+p415
+aag411
+a(lp416
+S'trial 17 started at 36.8128869534'
+p417
+aS'trial 17 phase 1 started at 36.8129041195'
+p418
+aS'trial 17 phase 2 started at 37.7224490643'
+p419
+aS'trial 17 event j at 38.4062759876'
+p420
+aag416
+a(lp421
+S'trial 18 started at 38.4297180176'
+p422
+aS'trial 18 phase 1 started at 38.4297320843'
+p423
+aS'trial 18 phase 2 started at 39.554776907'
+p424
+aS'trial 18 event j at 40.1236898899'
+p425
+aag421
+a(lp426
+S'trial 19 started at 40.1465649605'
+p427
+aS'trial 19 phase 1 started at 40.1465790272'
+p428
+aS'trial 19 phase 2 started at 41.1216769218'
+p429
+aS'trial 19 event j at 41.6061179638'
+p430
+aag426
+a(lp431
+S'trial 20 started at 41.6297719479'
+p432
+aS'trial 20 phase 1 started at 41.6297850609'
+p433
+aS'trial 20 phase 2 started at 42.4048681259'
+p434
+aS'trial 20 event j at 43.1395449638'
+p435
+aag431
+a(lp436
+S'trial 21 started at 43.1628599167'
+p437
+aS'trial 21 phase 1 started at 43.1628739834'
+p438
+aS'trial 21 phase 2 started at 44.0732810497'
+p439
+aS'trial 21 event f at 45.0771820545'
+p440
+aag436
+a(lp441
+S'trial 22 started at 45.100137949'
+p442
+aS'trial 22 phase 1 started at 45.1001520157'
+p443
+aS'trial 22 phase 2 started at 45.8930640221'
+p444
+aS'trial 22 event j at 46.5943319798'
+p445
+aag441
+a(lp446
+S'trial 23 started at 46.6174759865'
+p447
+aS'trial 23 phase 1 started at 46.6174890995'
+p448
+aS'trial 23 phase 2 started at 47.6095321178'
+p449
+aS'trial 23 event j at 48.4765079021'
+p450
+aag446
+a(lp451
+S'trial 24 started at 48.499557972'
+p452
+aS'trial 24 phase 1 started at 48.4995729923'
+p453
+aS'trial 24 phase 2 started at 49.4267859459'
+p454
+aS'trial 24 event f at 50.2923009396'
+p455
+aag451
+a(lp456
+S'trial 25 started at 50.3155040741'
+p457
+aS'trial 25 phase 1 started at 50.3155190945'
+p458
+aS'trial 25 phase 2 started at 51.5242619514'
+p459
+aS'trial 25 event f at 52.3271839619'
+p460
+aag456
+a(lp461
+S'trial 26 started at 52.350605011'
+p462
+aS'trial 26 phase 1 started at 52.3506190777'
+p463
+aS'trial 26 phase 2 started at 53.5923860073'
+p464
+aS'trial 26 event f at 54.3935449123'
+p465
+aag461
+a(lp466
+S'trial 27 started at 54.4167721272'
+p467
+aS'trial 27 phase 1 started at 54.4167859554'
+p468
+aS'trial 27 phase 2 started at 55.2251710892'
+p469
+aS'trial 27 event j at 56.1271579266'
+p470
+aag466
+a(lp471
+S'trial 28 started at 56.1504290104'
+p472
+aS'trial 28 phase 1 started at 56.1504440308'
+p473
+aS'trial 28 phase 2 started at 57.0622630119'
+p474
+aS'trial 28 event j at 57.913433075'
+p475
+aag471
+a(lp476
+S'trial 29 started at 57.9366590977'
+p477
+aS'trial 29 phase 1 started at 57.9366729259'
+p478
+aS'trial 29 phase 2 started at 59.111397028'
+p479
+aS'trial 29 event j at 59.9633920193'
+p480
+aag476
+a(lp481
+S'trial 30 started at 59.9866189957'
+p482
+aS'trial 30 phase 1 started at 59.9866330624'
+p483
+aS'trial 30 phase 2 started at 61.2463350296'
+p484
+aS'trial 30 event f at 62.0475099087'
+p485
+aag481
+a(lp486
+S'trial 31 started at 62.070638895'
+p487
+aS'trial 31 phase 1 started at 62.0706539154'
+p488
+aS'trial 31 phase 2 started at 63.2450389862'
+p489
+aS'trial 31 event j at 64.0292930603'
+p490
+aag486
+a(lp491
+S'trial 32 started at 64.0525279045'
+p492
+aS'trial 32 phase 1 started at 64.0525419712'
+p493
+aS'trial 32 phase 2 started at 65.1781489849'
+p494
+aS'trial 32 event f at 66.2957229614'
+p495
+aag491
+a(lp496
+S'trial 33 started at 66.3185529709'
+p497
+aS'trial 33 phase 1 started at 66.3185660839'
+p498
+aS'trial 33 phase 2 started at 67.1774809361'
+p499
+aS'trial 33 event j at 67.9616379738'
+p500
+aag496
+a(lp501
+S'trial 34 started at 67.9849939346'
+p502
+aS'trial 34 phase 1 started at 67.9850080013'
+p503
+aS'trial 34 phase 2 started at 69.2274570465'
+p504
+aS'trial 34 event f at 70.328357935'
+p505
+aag501
+a(lp506
+S'trial 35 started at 70.351569891'
+p507
+aS'trial 35 phase 1 started at 70.351583004'
+p508
+aS'trial 35 phase 2 started at 71.3979370594'
+p509
+aS'trial 35 event j at 72.2826199532'
+p510
+aag506
+a(lp511
+S'trial 36 started at 72.3056209087'
+p512
+aS'trial 36 phase 1 started at 72.3056359291'
+p513
+aS'trial 36 phase 2 started at 73.1649000645'
+p514
+aS'trial 36 event j at 74.1831600666'
+p515
+aag511
+a(lp516
+S'trial 37 started at 74.2066650391'
+p517
+aS'trial 37 phase 1 started at 74.2066791058'
+p518
+aS'trial 37 phase 2 started at 75.1321339607'
+p519
+aS'trial 37 event f at 76.1322660446'
+p520
+aag516
+a(lp521
+S'trial 38 started at 76.155230999'
+p522
+aS'trial 38 phase 1 started at 76.1552450657'
+p523
+aS'trial 38 phase 2 started at 77.3817360401'
+p524
+aS'trial 38 event j at 78.1497321129'
+p525
+aag521
+a(lp526
+S'trial 39 started at 78.1732120514'
+p527
+aS'trial 39 phase 1 started at 78.173224926'
+p528
+aS'trial 39 phase 2 started at 78.9652819633'
+p529
+aS'trial 39 event f at 79.7160820961'
+p530
+aag526
+as.
