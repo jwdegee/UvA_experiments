@@ -40,18 +40,22 @@ class PRSession(EyelinkSession):
     def create_trials(self):
         """creates trials by creating a restricted random walk through the display from trial to trial"""
 
-        stim = list(np.concatenate((np.ones(int(self.config['signal_probability']*10)),np.zeros(int((1-self.config['signal_probability'])*10)))))
-        print(stim)
+        stim = list(np.concatenate((np.ones(int(self.config['signal_probability']*self.config['trials_n'])),
+                                    np.zeros(int((1-self.config['signal_probability'])*self.config['trials_n']))
+                                    )))
+        # print(stim)
+        print('nr trials = {}'.format(len(stim)))
+        print('nr present = {}'.format(sum(stim)))
+        print('nr absent = {}'.format(self.config['trials_n']-sum(stim)))
         self.trial_parameters = []
-        for t in xrange(self.config['trials_n'] / len(stim)):
-            for s in stim:
-                self.trial_parameters.append({'duration_intro': 0, #1 + np.random.exponential(1.5),
-                                             'duration_delay' : np.random.uniform(0.75,1.25),
-                                             'duration_decision': 2.5,
-                                             'present': s,
-                                             'signal_probability': self.config['signal_probability'],
-                                             'volume': self.volume.loc[self.index_number,'volume']
-                                             })
+        for s in stim:
+            self.trial_parameters.append({'duration_intro': 0, #1 + np.random.exponential(1.5),
+                                            'duration_delay' : np.random.uniform(0.75,1.25),
+                                            'duration_decision': 2.5,
+                                            'present': s,
+                                            'signal_probability': self.config['signal_probability'],
+                                            'volume': self.volume.loc[self.index_number,'volume']
+                                            })
         
         # shuffle:
         random.shuffle(self.trial_parameters)
