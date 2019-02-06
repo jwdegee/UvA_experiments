@@ -1,0 +1,35 @@
+(dp0
+S'parameterArray'
+p1
+(lp2
+(dp3
+S'experiment'
+p4
+I600
+sS'duration_intro'
+p5
+I30
+sasS'eventArray'
+p6
+(lp7
+(lp8
+S'trial 0 started at 0.972184896469'
+p9
+aS'trial 0 event f at 4.00326895714'
+p10
+aS'trial 0 event j at 8.9019048214'
+p11
+aS'trial 0 event f at 10.6668739319'
+p12
+aS'trial 0 event j at 10.766258955'
+p13
+aS'trial 0 event f at 10.8672888279'
+p14
+aS'trial 0 event j at 10.950622797'
+p15
+a(lp16
+I-99
+aF10.560040950775146
+aaS'trial 0 event escape at 11.5322468281'
+p17
+aas.

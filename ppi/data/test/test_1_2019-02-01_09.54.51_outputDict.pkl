@@ -1,0 +1,38 @@
+(dp0
+S'parameterArray'
+p1
+(lp2
+(dp3
+S'delay'
+p4
+F11.695620622505414
+sS'stimulation'
+p5
+I4
+sS'probe'
+p6
+I1
+sS'duration_intro'
+p7
+I30
+sS'prepulse'
+p8
+I2
+sasS'eventArray'
+p9
+(lp10
+(lp11
+S'trial 0 started at 0.879190921783'
+p12
+aS'trial 0 phase 1 started at 2.82103896141'
+p13
+aS'trial 0 event space at 2.82104802132'
+p14
+aS'trial 0 event space at 12.5777449608'
+p15
+a(lp16
+I-99
+aF13.01515007019043
+aaS'trial 0 event q at 13.8943669796'
+p17
+aas.

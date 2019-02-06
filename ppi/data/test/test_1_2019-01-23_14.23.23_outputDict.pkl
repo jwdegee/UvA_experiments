@@ -1,0 +1,27 @@
+(dp0
+S'parameterArray'
+p1
+(lp2
+(dp3
+S'experiment'
+p4
+I600
+sS'duration_intro'
+p5
+I30
+sasS'eventArray'
+p6
+(lp7
+(lp8
+S'trial 0 started at 0.962387084961'
+p9
+aS'trial 0 phase 1 started at 1.47135210037'
+p10
+aS'trial 0 event space at 1.47136092186'
+p11
+a(lp12
+I-99
+aF8.862736940383911
+aaS'trial 0 event escape at 9.82514691353'
+p13
+aas.

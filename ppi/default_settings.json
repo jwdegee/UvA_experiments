@@ -1,0 +1,6 @@
+{
+	"signal_probability": 0.7,
+	"fixation_size": 0.25,
+	"trials_n": 120,
+	"block_size": 40
+}

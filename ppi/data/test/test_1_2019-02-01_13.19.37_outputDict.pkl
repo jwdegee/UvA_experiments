@@ -1,0 +1,200 @@
+(dp0
+S'parameterArray'
+p1
+(lp2
+(dp3
+S'delay'
+p4
+F2.3971572551044114
+sS'stimulation'
+p5
+I4
+sS'probe'
+p6
+I0
+sS'duration_intro'
+p7
+I30
+sS'prepulse'
+p8
+I1
+sa(dp9
+g4
+F2.488324400869168
+sg5
+I4
+sg6
+I1
+sg7
+I0
+sg8
+I1
+sa(dp10
+g4
+F2.8303062393652967
+sg5
+I4
+sg6
+I0
+sg7
+I0
+sg8
+I3
+sa(dp11
+g4
+F2.607026629950414
+sg5
+I4
+sg6
+I1
+sg7
+I0
+sg8
+I0
+sa(dp12
+g4
+F2.060123245186375
+sg5
+I4
+sg6
+I0
+sg7
+I0
+sg8
+I2
+sa(dp13
+g4
+F2.70624186062403
+sg5
+I4
+sg6
+I1
+sg7
+I0
+sg8
+I0
+sa(dp14
+g4
+F2.1866135006558234
+sg5
+I4
+sg6
+I1
+sg7
+I0
+sg8
+I1
+sa(dp15
+g4
+F2.556074504425059
+sg5
+I4
+sg6
+I0
+sg7
+I0
+sg8
+I0
+sa(dp16
+g4
+F2.212609824653612
+sg5
+I4
+sg6
+I1
+sg7
+I0
+sg8
+I3
+sa(dp17
+g4
+F2.2166466801092537
+sg5
+I4
+sg6
+I0
+sg7
+I0
+sg8
+I0
+sasS'eventArray'
+p18
+(lp19
+(lp20
+S'trial 0 started at 1.40595912933'
+p21
+aS'trial 0 phase 1 started at 3.27228307724'
+p22
+aS'trial 0 event space at 3.27229118347'
+p23
+aS'trial 0 phase 2 started at 5.64195919037'
+p24
+aa(lp25
+S'trial 1 started at 9.65933513641'
+p26
+aS'trial 1 phase 1 started at 9.65937209129'
+p27
+aS'trial 1 phase 2 started at 12.1581010818'
+p28
+aa(lp29
+S'trial 2 started at 16.1746702194'
+p30
+aS'trial 2 phase 1 started at 16.1746981144'
+p31
+aS'trial 2 phase 2 started at 19.0073502064'
+p32
+aa(lp33
+S'trial 3 started at 23.0243160725'
+p34
+aS'trial 3 phase 1 started at 23.0243530273'
+p35
+aS'trial 3 phase 2 started at 25.6406960487'
+p36
+aa(lp37
+S'trial 4 started at 29.6595010757'
+p38
+aS'trial 4 phase 1 started at 29.659537077'
+p39
+aS'trial 4 phase 2 started at 31.7245161533'
+p40
+aa(lp41
+S'trial 5 started at 35.7413640022'
+p42
+aS'trial 5 phase 1 started at 35.7414021492'
+p43
+aS'trial 5 phase 2 started at 38.4568572044'
+p44
+aa(lp45
+S'trial 6 started at 42.4747130871'
+p46
+aS'trial 6 phase 1 started at 42.4747509956'
+p47
+aS'trial 6 phase 2 started at 44.674241066'
+p48
+aa(lp49
+S'trial 7 started at 48.6912260056'
+p50
+aS'trial 7 phase 1 started at 48.6912660599'
+p51
+aS'trial 7 phase 2 started at 51.2573370934'
+p52
+aa(lp53
+S'trial 8 started at 55.2905991077'
+p54
+aS'trial 8 phase 1 started at 55.2906281948'
+p55
+aS'trial 8 phase 2 started at 57.5075750351'
+p56
+aa(lp57
+S'trial 9 started at 61.5398411751'
+p58
+aS'trial 9 phase 1 started at 61.5398771763'
+p59
+aS'trial 9 phase 2 started at 63.7571880817'
+p60
+a(lp61
+I-99
+aF2.3212740421295166
+aaS'trial 9 event q at 63.8611421585'
+p62
+aas.

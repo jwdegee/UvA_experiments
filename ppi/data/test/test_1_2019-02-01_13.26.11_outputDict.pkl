@@ -1,0 +1,128 @@
+(dp0
+S'parameterArray'
+p1
+(lp2
+(dp3
+S'delay'
+p4
+F2.736452675431853
+sS'stimulation'
+p5
+I4
+sS'probe'
+p6
+I0
+sS'duration_intro'
+p7
+I30
+sS'prepulse'
+p8
+I0
+sa(dp9
+g4
+F2.5385633782077925
+sg5
+I4
+sg6
+I0
+sg7
+I0
+sg8
+I2
+sa(dp10
+g4
+F2.3106599720414525
+sg5
+I4
+sg6
+I0
+sg7
+I0
+sg8
+I2
+sa(dp11
+g4
+F2.828972386240243
+sg5
+I4
+sg6
+I1
+sg7
+I0
+sg8
+I1
+sa(dp12
+g4
+F2.3831626713933636
+sg5
+I4
+sg6
+I1
+sg7
+I0
+sg8
+I0
+sa(dp13
+g4
+F2.308041083388257
+sg5
+I4
+sg6
+I0
+sg7
+I0
+sg8
+I3
+sasS'eventArray'
+p14
+(lp15
+(lp16
+S'trial 0 started at 1.11286282539'
+p17
+aS'trial 0 phase 1 started at 2.00467181206'
+p18
+aS'trial 0 event space at 2.00468087196'
+p19
+aS'trial 0 phase 2 started at 4.72114801407'
+p20
+aa(lp21
+S'trial 1 started at 8.75339698792'
+p22
+aS'trial 1 phase 1 started at 8.75343394279'
+p23
+aS'trial 1 phase 2 started at 11.3040268421'
+p24
+aa(lp25
+S'trial 2 started at 15.3367679119'
+p26
+aS'trial 2 phase 1 started at 15.336796999'
+p27
+aS'trial 2 phase 2 started at 17.6539189816'
+p28
+aa(lp29
+S'trial 3 started at 21.686578989'
+p30
+aS'trial 3 phase 1 started at 21.6866009235'
+p31
+aS'trial 3 phase 2 started at 24.5204048157'
+p32
+aa(lp33
+S'trial 4 started at 28.5367269516'
+p34
+aS'trial 4 phase 1 started at 28.5367648602'
+p35
+aS'trial 4 phase 2 started at 30.9204490185'
+p36
+aa(lp37
+S'trial 5 started at 34.9529309273'
+p38
+aS'trial 5 phase 1 started at 34.9529700279'
+p39
+aS'trial 5 phase 2 started at 37.2704160213'
+p40
+a(lp41
+I-99
+aF6.0527238845825195
+aaS'trial 5 event q at 41.0056829453'
+p42
+aas.
