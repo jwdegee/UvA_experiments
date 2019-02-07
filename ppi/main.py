@@ -1,6 +1,6 @@
 import os, sys
-from session import PRSession
 import appnope
+from session import PRSession
 
 def main():
 
@@ -8,13 +8,14 @@ def main():
     # index_number = int(raw_input('Which run: '))
     # version_number = int(raw_input('Version: ') )
 
-    subject_initials = 'test'
+    subject_initials = 'jg'
     index_number = 1
     version_number = 1
+    tracker_on = 1
 
-    tracker_on = 0
-    # screen_params = {'size':(1920,1080), 'full_screen': True, 'background_color':(0.5, 0.5, 0.5)}
-    screen_params = {'size':(800,600), 'full_screen': False, 'background_color':(0.5, 0.5, 0.5)}
+    
+    screen_params = {'size':(1920,1080), 'full_screen': True, 'background_color':(0.5, 0.5, 0.5)}
+    # screen_params = {'size':(800,600), 'full_screen': False, 'background_color':(0.5, 0.5, 0.5)}
     
     appnope.nope()
 

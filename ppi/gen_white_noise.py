@@ -3,6 +3,7 @@ import struct
 import wave
 
 sf = 44100
+start = 0.5
 pp_dur = 0.02
 p_dur = 0.04
 s_dur = 0.08
@@ -20,7 +21,9 @@ for pp in [0,1,2,3]:
         noise_output.setparams((2, 2, sf, 0, 'NONE', 'not compressed'))
         values = []
         for i in range(0, sl):
-            if i < (sl * pp_dur):
+            if i < (sl * start):
+                volume = 0
+            elif i < (sl * (start+pp_dur)):
                 if pp == 3:
                     volume = int(32000 / 52.5)
                 elif pp == 2:
@@ -29,9 +32,9 @@ for pp in [0,1,2,3]:
                     volume = int(32000 / 55.2)
                 else:
                     volume = 0
-            elif i < (sl * (pp_dur+s_dur)):
+            elif i < (sl * (start+pp_dur+s_dur)):
                 volume = 0
-            elif i < (sl * (pp_dur+s_dur+p_dur)):
+            elif i < (sl * (start+pp_dur+s_dur+p_dur)):
                 if p == 1:
                     volume = 32000
                 else:

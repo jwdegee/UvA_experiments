@@ -32,12 +32,12 @@ class PRSession(EyelinkSession):
 
         self.trial_parameters = []
 
-        nr_repititions = 9
+        nr_repititions = 10
         prepulses = [0, 1, 2, 3]
         probes = [0, 1]
 
-        prepulses = [3]
-        probes = [0,1]
+        # prepulses = [3]
+        # probes = [0,1]
 
         for repetition in range(nr_repititions):
             for prepulse in prepulses:
@@ -46,8 +46,7 @@ class PRSession(EyelinkSession):
                                                 'prepulse':prepulse,
                                                 'probe':probe,
                                                 'duration_intro': 0, #1 + np.random.exponential(1.5),
-                                                # 'delay' : np.random.uniform(10,20),
-                                                'delay' : np.random.uniform(3,5),
+                                                'delay' : np.random.uniform(5,15),
                                                 'stimulation' : 2,
                                                 })
         
@@ -60,8 +59,8 @@ class PRSession(EyelinkSession):
     def setup_stimuli(self):
         
 
-        sound_dir = '/Users/jwdegee/Documents/repos/UvA_experiments/ppi/sounds/'
-        # sound_dir = '/Users/beauchamplab/Documents/jwdegee/repos/UvA_experiments/sounds/'
+        # sound_dir = '/Users/jwdegee/Documents/repos/UvA_experiments/ppi/sounds/'
+        sound_dir = '/Users/beauchamplab/Documents/jwdegee/repos/UvA_experiments/ppi/sounds/'
         self.background = sound.Sound(os.path.join(sound_dir, 'background.wav'))
         self.pp0_p0 = sound.Sound(os.path.join(sound_dir, 'pp0_p0.wav'))
         self.pp0_p1 = sound.Sound(os.path.join(sound_dir, 'pp0_p1.wav'))
