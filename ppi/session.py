@@ -35,6 +35,10 @@ class PRSession(EyelinkSession):
         nr_repititions = 9
         prepulses = [0, 1, 2, 3]
         probes = [0, 1]
+
+        prepulses = [3]
+        probes = [0,1]
+
         for repetition in range(nr_repititions):
             for prepulse in prepulses:
                 for probe in probes:
@@ -42,7 +46,8 @@ class PRSession(EyelinkSession):
                                                 'prepulse':prepulse,
                                                 'probe':probe,
                                                 'duration_intro': 0, #1 + np.random.exponential(1.5),
-                                                'delay' : np.random.uniform(10,20),
+                                                # 'delay' : np.random.uniform(10,20),
+                                                'delay' : np.random.uniform(3,5),
                                                 'stimulation' : 2,
                                                 })
         
@@ -54,15 +59,10 @@ class PRSession(EyelinkSession):
 
     def setup_stimuli(self):
         
-        # white noise:
-        self.background = 0.02
-        data = np.random.uniform(-1,1,44100*60)
-        self.white_noise = sound.Sound(0.99*data)
-        self.white_noise.setVolume(self.background)
-
 
         sound_dir = '/Users/jwdegee/Documents/repos/UvA_experiments/ppi/sounds/'
         # sound_dir = '/Users/beauchamplab/Documents/jwdegee/repos/UvA_experiments/sounds/'
+        self.background = sound.Sound(os.path.join(sound_dir, 'background.wav'))
         self.pp0_p0 = sound.Sound(os.path.join(sound_dir, 'pp0_p0.wav'))
         self.pp0_p1 = sound.Sound(os.path.join(sound_dir, 'pp0_p1.wav'))
         self.pp1_p0 = sound.Sound(os.path.join(sound_dir, 'pp1_p0.wav'))
@@ -107,7 +107,7 @@ class PRSession(EyelinkSession):
     def run(self):
         """run the session"""
 
-        self.white_noise.play(loops=-1)
+        self.background.play(loops=-1)
 
         # cycle through trials
         for trial_id, parameters in enumerate(self.trial_parameters):
