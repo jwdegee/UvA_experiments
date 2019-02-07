@@ -45,7 +45,8 @@ if __name__ == '__main__':
     index_number = int(raw_input('Which run: '))
     version = int(raw_input('Version: ') )
 
-	# analyse_yesno(subject=initials, index=index_number, version=version)
+    filename = glob.glob(os.path.join('data', initials, '{}_{}*.tsv'.format(initials, index_number)))[0]
+    analyse_yesno(filename)
 
 
 
