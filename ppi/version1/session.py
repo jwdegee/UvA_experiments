@@ -32,9 +32,10 @@ class PRSession(EyelinkSession):
 
         self.trial_parameters = []
 
-        nr_repititions = 9
+        nr_repititions = 20
         prepulses = [0, 1, 2, 3]
         probes = [0, 1]
+
         for repetition in range(nr_repititions):
             for prepulse in prepulses:
                 for probe in probes:
@@ -42,10 +43,10 @@ class PRSession(EyelinkSession):
                                                 'prepulse':prepulse,
                                                 'probe':probe,
                                                 'duration_intro': 0, #1 + np.random.exponential(1.5),
-                                                'delay' : np.random.uniform(10,20),
-                                                'stimulation' : 2,
+                                                'delay' : np.random.uniform(2,3),
+                                                'stimulation' : 4,
                                                 })
-        
+            
         # shuffle:
         random.shuffle(self.trial_parameters)
         
@@ -59,18 +60,6 @@ class PRSession(EyelinkSession):
         data = np.random.uniform(-1,1,44100*60)
         self.white_noise = sound.Sound(0.99*data)
         self.white_noise.setVolume(self.background)
-
-
-        sound_dir = '/Users/jwdegee/Documents/repos/UvA_experiments/ppi/sounds/'
-        # sound_dir = '/Users/beauchamplab/Documents/jwdegee/repos/UvA_experiments/sounds/'
-        self.pp0_p0 = sound.Sound(os.path.join(sound_dir, 'pp0_p0.wav'))
-        self.pp0_p1 = sound.Sound(os.path.join(sound_dir, 'pp0_p1.wav'))
-        self.pp1_p0 = sound.Sound(os.path.join(sound_dir, 'pp1_p0.wav'))
-        self.pp1_p1 = sound.Sound(os.path.join(sound_dir, 'pp1_p1.wav'))
-        self.pp2_p0 = sound.Sound(os.path.join(sound_dir, 'pp2_p0.wav'))
-        self.pp2_p1 = sound.Sound(os.path.join(sound_dir, 'pp2_p1.wav'))
-        self.pp3_p0 = sound.Sound(os.path.join(sound_dir, 'pp3_p0.wav'))
-        self.pp3_p1 = sound.Sound(os.path.join(sound_dir, 'pp3_p1.wav'))
 
         # fixation:
         size_fixation_pix = self.deg2pix(self.config['fixation_size'])
